@@ -1,7 +1,10 @@
 """
 Module for the various spectrometers.
 """
-from ophyd.device import Device, Component as Cpt, FormattedComponent as FCpt
+from ophyd.device import Component as Cpt
+from ophyd.device import Device
+from ophyd.device import FormattedComponent as FCpt
+
 from .epics_motor import BeckhoffAxis
 from .interface import BaseInterface
 

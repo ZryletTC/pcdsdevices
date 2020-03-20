@@ -1,7 +1,9 @@
 """
 Module for goniometers
 """
-from ophyd import Component as FCpt, Device
+from ophyd import Component as FCpt
+from ophyd import Device
+
 from .epics_motor import IMS
 from .interface import BaseInterface
 
