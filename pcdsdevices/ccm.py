@@ -135,8 +135,9 @@ class CCM(InOutPositioner):
     This requires a huge number of motor pv prefixes to be passed in, and they
     are all labelled accordingly.
     """
-
-    calc = FCpt(CCMCalc, '{self.alio_prefix}', kind='hinted')
+    calc = FCpt(CCMCalc, '{self.alio_prefix}', theta0='{self._theta0}',
+                dspacing='{self._dspacing}', gr='{self._gr}', gd='{self._gd}',
+                kind='hinted')
     theta2fine = FCpt(CCMMotor, '{self.theta2fine_prefix}')
     x = FCpt(CCMX,
              down_prefix='{self.x_down_prefix}',
@@ -158,7 +159,8 @@ class CCM(InOutPositioner):
 
     def __init__(self, alio_prefix, theta2fine_prefix, x_down_prefix,
                  x_up_prefix, y_down_prefix, y_up_north_prefix,
-                 y_up_south_prefix, in_pos, out_pos, *args, **kwargs):
+                 y_up_south_prefix, in_pos, out_pos, *args, theta0=None,
+                 dspacing=None, gr=None, gd=None, **kwargs):
         self.alio_prefix = alio_prefix
         self.theta2fine_prefix = theta2fine_prefix
         self.x_down_prefix = x_down_prefix
@@ -168,6 +170,10 @@ class CCM(InOutPositioner):
         self.y_up_south_prefix = y_up_south_prefix
         self._in_pos = in_pos
         self._out_pos = out_pos
+        self._theta0 = theta0
+        self._dspacing = dspacing
+        self._gr = gr
+        self._gd = gd
         super().__init__(alio_prefix, *args, **kwargs)
 
     @property
