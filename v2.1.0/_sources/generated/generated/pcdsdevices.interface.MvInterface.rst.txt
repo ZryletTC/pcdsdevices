@@ -1,0 +1,48 @@
+pcdsdevices.interface.MvInterface
+=================================
+
+.. currentmodule:: pcdsdevices.interface
+
+.. autoclass:: MvInterface
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~MvInterface.__init__
+      ~MvInterface.add_instantiation_callback
+      ~MvInterface.camonitor
+      ~MvInterface.check_value
+      ~MvInterface.clear_sub
+      ~MvInterface.destroy
+      ~MvInterface.end_monitor_thread
+      ~MvInterface.mv
+      ~MvInterface.subscribe
+      ~MvInterface.unsubscribe
+      ~MvInterface.unsubscribe_all
+      ~MvInterface.wm
+      ~MvInterface.wm_update
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~MvInterface.attr_name
+      ~MvInterface.connected
+      ~MvInterface.dotted_name
+      ~MvInterface.event_types
+      ~MvInterface.kind
+      ~MvInterface.name
+      ~MvInterface.parent
+      ~MvInterface.report
+      ~MvInterface.root
+      ~MvInterface.tab_whitelist
+   
+   

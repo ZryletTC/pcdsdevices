@@ -1,0 +1,45 @@
+pcdsdevices.mps.MPSBase
+=======================
+
+.. currentmodule:: pcdsdevices.mps
+
+.. autoclass:: MPSBase
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~MPSBase.__init__
+      ~MPSBase.add_instantiation_callback
+      ~MPSBase.check_value
+      ~MPSBase.clear_sub
+      ~MPSBase.destroy
+      ~MPSBase.subscribe
+      ~MPSBase.unsubscribe
+      ~MPSBase.unsubscribe_all
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~MPSBase.SUB_FAULT_CH
+      ~MPSBase.attr_name
+      ~MPSBase.connected
+      ~MPSBase.dotted_name
+      ~MPSBase.event_types
+      ~MPSBase.kind
+      ~MPSBase.name
+      ~MPSBase.parent
+      ~MPSBase.report
+      ~MPSBase.root
+      ~MPSBase.tab_whitelist
+      ~MPSBase.tripped
+   
+   
